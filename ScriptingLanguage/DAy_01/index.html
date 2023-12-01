@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Class</title>
+</head>
+
+<body>
+     <div class="main">
+          <h1>HomePage</h1>
+          <p>this is paragraph</p>
+     </div>
+<button class="hidebtn"><h1>if you press me i'll be hide</h1></button>
+
+     <!-- 
+          Note: use console under developer-tool on browser to debug JavaScript.
+     -->
+     <script type="text/javascript">
+          // JS commit: Single line (//) and multi-line(/* */)
+          /*
+          Dom Element Selector in javaScript:
+          - root:document (trigers html)
+          i.e.: document.selectorName
+
+
+          selectorNames (method)
+          - getElementById()
+          - getElementsByclassName()
+          - getElementsByTagName()
+          - quearySelector()
+          - quearySelectoAll
+          - form_name or form_name.field_name
+
+
+          variable making keywords:
+          -var : redeclare and redefine is possible
+          - let : redeclare is not possible, but redefine is possible
+          pconst : redeclare and redefine both are not possible
+          */
+
+//declare:
+var a = 10;
+
+
+let main = document.querySelector(".main");
+main.style.border = "2px solid #000";
+main.style.backgroundColor = "#dadada";
+main.style.padding = "40px";
+main.style.boxShadow = "   rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset";
+
+let note = document.createElement ('div');
+// adding text on node: inner Text, innerHTML
+note.innerText = "Note : This is javaScrispt practive for client-side scripting";
+
+// Adding Create node inside existing node or element: append, prepend
+main.append(note);
+
+// let btn = document.createElement("button");
+// btn.innerText = "Click Me";
+// document.body.append(btn);
+
+// btn.addEventListiner("click", function(){
+//      alert("hit! I am clicked");
+// });
+
+console.log(Array(), Object());
+     </script>
+     <script src="./script.js"></script>
+</body>
+
+</html>
