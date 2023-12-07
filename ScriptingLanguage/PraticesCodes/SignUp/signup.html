@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Form HTML -->
+    <div class="form-box">
+        <h1 class="tittle">Signup Form</h1>
+        <div class="text-box">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia saepe totam et ex consequuntur blanditiis quis culpa quod ratione voluptas?</p>
+        </div>
+        <!-- # is known as self path -->
+        <!-- Data Hanadaling with form to store inside database -->
+        <form action="#" method="POST" name="sign_up" enctype="multipart/form-data" >
+            <div class="field_group">
+                <label for="fname">Full Name*</label>
+                <input type="text" name="f_name" id="fname" value="">
+            </div>
+
+
+            <div class="field_group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" value="">
+            </div>
+
+
+            <div class="field_group">
+                <label for="photo">Photo</label>
+                <input type="file" name="photo" id="photo" value="">
+            </div>
+
+
+            <button type="submit" name="signup"> Submit</button>
+
+
+        </form>
+    </div>
+
+
+<!-- JavaScript -->
+<script src="./signup.js"></script>
+</body>
+</html>
