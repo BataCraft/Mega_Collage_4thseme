@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="warpper">
+    
+    <form action="#" method="get" name="contact">
+        <h1 class="tittle">Contact </h1>
+        <div class="fildset">
+            <label for="fullname">First Name*</label>
+        <input type="text" name="firstname" id="fullname" class="inp"  value="">
+        </div>
+
+        <div class="fildset">
+            <label for="middle">Middle Name</label>
+        <input type="text" name="middle" id="middle" class="inp" value="" >
+        </div>
+
+        <div class="fildset">
+            <label for="lastname">Last Name*</label>
+        <input type="text" name="lastname" id="lastname" class="inp" value="">
+        </div>
+
+        <div class="fildset">
+            <label for="email">Email</label>
+        <input type="text" name="email" id="email" class="inp" value="">
+        </div>
+
+        <div class="fildset">
+            <label for="phone">Phone Number*</label>
+        <input type="tel" name="phone" class="inp" id="phone" value="">
+        </div>
+
+        <div class="gender">
+        <input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="female">female
+        <input type="radio" name="gender" value="others">others
+        </div>
+
+        <div class="fildset">
+            <label for="address">Address</label>
+        <input type="text" name="address" class="inp" id="address" value="">
+        </div>
+        
+
+        <div class="message">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Write message"></textarea>
+        </div>
+
+        <input type="submit" name="submit" id="submit" value="save">
+        <input type="reset" name="reset" id="submit" value="clear">
+    </form>
+</div>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
