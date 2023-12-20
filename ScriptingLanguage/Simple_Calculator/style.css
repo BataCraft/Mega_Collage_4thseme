@@ -1,0 +1,56 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html, body{
+height:100%;
+width:100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#warpper{
+    width: 50%;
+    height: 50%;
+    border: 3px solid #0b0b0bdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 0 2vw;
+}
+.oprandsinp{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 2vw;
+}
+.oprands input, .result input{
+    width: 15vw;
+    border: 2px solid#000;
+    height: 2vw;
+    padding: 0 2vw;
+}
+
+.result{
+    text-align: center;
+}
+.types{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 2vw;
+}
+.types button{
+    width: 10vw;
+    background-color: #dadada;
+    height: 2vw;
+    font-size: 15px;
+    font-weight: 900;
+}
