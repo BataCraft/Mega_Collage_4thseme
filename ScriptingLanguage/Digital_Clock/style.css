@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap');
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html, body{
+height:100%;
+width:100%;
+font-family: 'Hind Vadodara', sans-serif;
+}
+
+.warpper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background:#000000;
+    flex-direction: column;
+}
+
+button{
+    padding: 1vw 2vw;
+    margin-top: 3vw;
+    font-size: 2vw;
+}
+#clock{
+    font-size: 5rem;
+    color: green;
+}
+
+#pg{
+    font-size: 2rem;
+    color: #fff;
+}

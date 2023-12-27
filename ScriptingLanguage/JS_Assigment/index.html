@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your CV</title>
+</head>
+
+<body>
+
+    <script>
+        // Your CV information as an array
+        let cvArray = [
+            "Name: Your Name",
+            "Title: Web Developer",
+            "Education: Bachelor's in Computer Science",
+            "Skills: HTML, CSS, JavaScript",
+            "Experience: 2 years of web development",
+            "Projects: Project 1, Project 2, Project 3",
+            "Contact: your.email@example.com"
+        ];
+// document.write(cvArray)
+        // Display CV information using a loop
+        let cvSection = document.createElement('section');
+        document.body.appendChild(cvSection);
+
+        for (let i = 0; i < cvArray.length; i++) {
+            let para = document.createElement('p');
+            para.textContent = cvArray[i];
+
+            cvSection.appendChild(para);
+        }
+    </script>
+
+</body>
+
+</html>

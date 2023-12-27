@@ -1,0 +1,1 @@
+setInterval(updateclock, 1000);

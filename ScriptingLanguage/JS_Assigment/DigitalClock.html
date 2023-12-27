@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+        }
+        #clock{
+            font-size: 10vw;
+            color: #000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock">
+
+    </div>
+    <script>
+        
+//         - Write script to print digital date-clock using JS.
+
+setInterval( digitalClock, 1000)
+function digitalClock(){
+
+    let date = new Date();
+    let hr = date.getHours(),
+    min = date.getMinutes(),
+    sec = date.getSeconds();
+    let ampm;
+    let mnth = date.getMonth();
+    let yrs = date.getFullYear();
+    let day = date.getDay();
+    let months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', "Aug",' Sept','Oct', 'Nov', 'Dec'];
+    let week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+
+    // Checking for AM or PM.
+    if(hr >= 12)
+    {
+        ampm = "pm"
+    }
+    else if(hr == 0)
+    {
+        hr = 12
+        ampm = "AM"
+    }
+    /* Convert hours from 24 to 12 hour format */
+    document.getElementById("clock").innerText = (`${months[mnth]}-${yrs} ${week[day]} \n ${hr}:${min}:${sec}${ampm}`);
+}
+// setInterval(1000)
+digitalClock();
+
+
+    </script>
+</body>
+</html>

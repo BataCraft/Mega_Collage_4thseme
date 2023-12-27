@@ -14,4 +14,4 @@
 let date = new Date
 let day = date.getDay() +1,
 year = date.getFullYear();
-console.log(year);
+doc

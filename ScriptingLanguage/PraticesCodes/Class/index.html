@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show and Hide</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #warpper{
+            width: 500px;
+            height: 200px;
+            text-align: center;
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            margin-left: 20px;
+            &:hover{
+                background-color: lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="warpper">
+        <p id="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, amet molestiae eveniet aut quia praesentium officiis. Assumenda, corrupti! Voluptatibus voluptate atque cumque odio officia, totam error minus quibusdam? Exercitationem praesentium assumenda quae officia ducimus eum nihil similique sed minus! Molestias consectetur nesciunt quos molestiae ipsa ea in voluptatum excepturi aut!</p>
+        <button id="hide">Hide</button>
+        <button id="show">show</button>
+    </div>
+
+    <script>
+        let par = document.getElementById('par')
+        let hideBtn = document.getElementById("hide");
+        let showBtn = document.getElementById("show");
+
+        //For showing paragraph
+        showBtn.addEventListener("click", function(){
+            par.style.display = "block";
+            
+        })
+        //For hiding the paragraph
+        hideBtn.addEventListener("click", function(){
+            par.style.display = "none";
+            
+        })
+
+        window.cookie = "name = Hello; lastName = World; "
+        document.write(window.cookie.split(";"))
+    </script>
+</body>
+</html>

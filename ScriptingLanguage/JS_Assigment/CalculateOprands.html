@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caluculate two Oprands</title>
+    <style>
+        #oprands{
+            font-size: 5vw;
+        }
+    </style>
+</head>
+<body>
+    <div id="oprands">
+
+    </div>
+</body>
+
+<script>
+    // Get the oprand inputs from user
+    let num1 = +prompt ("Enter First Number")
+    let num2 = +prompt ("Enter Second NUmber")
+    let options = +prompt ( "Press 1 for add \n Press 2 for subtract \n Press 3 for Multicipation \n press 4 for Devision");
+    switch(options)
+    {
+        case 1 : 
+            document.getElementById("oprands").innerText = (`The sum of ${num1} and ${num2} is: ${num1 + num2} `)
+            break;
+        case 2 :
+            document.getElementById("oprands").innerText = (`The Subtractions of ${num1} and ${num2} is: ${num1 - num2}`)
+        break;
+        case 3 :
+            document.getElementById("oprands").innerText = (`The Multiplaction of ${num1} and ${num2} is: ${num1 * num2}`)
+        break;
+        case 4 :
+            document.getElementById("oprands").innerText = (`The Devesion of ${num1} and ${num2} is: ${num1 / num2}`)
+        break;
+        default:
+            alert("Invalid Option");
+    }
+</script>
+</html>
